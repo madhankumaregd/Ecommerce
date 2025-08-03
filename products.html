@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>ShopEasy</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="account"><i class="fas fa-user"></i> Account</a>
+                <a href="#" class="wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="category-container">
+            <a href="index.html" class="category-link">Home</a>
+            <a href="#" class="category-link active" id="current-category">Electronics</a>
+        </div>
+    </div>
+
+    <!-- Product Listing Section -->
+    <div class="product-listing-container">
+        <!-- Filters -->
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="filter-section">
+                <h4>Price Range</h4>
+                <div class="price-range">
+                    <input type="range" min="0" max="1000" value="500" class="slider" id="priceRange">
+                    <p>Price: $<span id="priceValue">0</span> - $<span id="priceMax">1000</span></p>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h4>Brand</h4>
+                <div class="brand-options">
+                    <label><input type="checkbox" name="brand" value="sony"> Sony</label>
+                    <label><input type="checkbox" name="brand" value="samsung"> Samsung</label>
+                    <label><input type="checkbox" name="brand" value="apple"> Apple</label>
+                    <label><input type="checkbox" name="brand" value="lg"> LG</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h4>Customer Ratings</h4>
+                <div class="rating-options">
+                    <label><input type="checkbox" name="rating" value="4"> 4★ & above</label>
+                    <label><input type="checkbox" name="rating" value="3"> 3★ & above</label>
+                    <label><input type="checkbox" name="rating" value="2"> 2★ & above</label>
+                    <label><input type="checkbox" name="rating" value="1"> 1★ & above</label>
+                </div>
+            </div>
+            <button class="apply-filters">Apply Filters</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-listing">
+            <div class="listing-header">
+                <h2 id="category-title">Electronics</h2>
+                <div class="view-options">
+                    <span>View:</span>
+                    <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i> Grid</button>
+                    <button class="view-btn" data-view="list"><i class="fas fa-list"></i> List</button>
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="popular">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Customer Ratings</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-view">
+                <!-- Products will be loaded here dynamically -->
+                <!-- Sample product cards (same as index.html but more products) -->
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">Next →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <!-- Footer content from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Update category title based on URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category');
+        if (category) {
+            document.getElementById('current-category').textContent = category.charAt(0).toUpperCase() + category.slice(1);
+            document.getElementById('category-title').textContent = category.charAt(0).toUpperCase() + category.slice(1);
+        }
+    </script>
+</body>
+</html>

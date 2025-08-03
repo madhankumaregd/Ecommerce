@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShopEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>ShopEasy</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="account"><i class="fas fa-user"></i> Account</a>
+                <a href="#" class="wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <div class="product-detail-container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> >
+            <a href="products.html">Electronics</a> >
+            <span>Premium Laptop</span>
+        </div>
+
+        <!-- Product Main Section -->
+        <div class="product-main">
+            <!-- Product Images -->
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="images/laptop-large.jpg" alt="Premium Laptop" id="mainProductImage">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="images/laptop-thumb1.jpg" alt="Laptop Thumbnail 1" class="thumbnail active">
+                    <img src="images/laptop-thumb2.jpg" alt="Laptop Thumbnail 2" class="thumbnail">
+                    <img src="images/laptop-thumb3.jpg" alt="Laptop Thumbnail 3" class="thumbnail">
+                    <img src="images/laptop-thumb4.jpg" alt="Laptop Thumbnail 4" class="thumbnail">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title">Premium Laptop - 15.6" FHD, 16GB RAM, 512GB SSD</h1>
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-count">124 ratings</span>
+                    <span class="review-count">| 89 reviews</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">$899.99</span>
+                    <span class="original-price">$1,099.99</span>
+                    <span class="discount">(18% off)</span>
+                </div>
+                <div class="product-offers">
+                    <h3>Available offers</h3>
+                    <ul>
+                        <li><i class="fas fa-tag"></i> <strong>Bank Offer</strong> 10% off on XYZ Bank Credit Cards</li>
+                        <li><i class="fas fa-tag"></i> <strong>Special Price</strong> Get extra 5% off (price inclusive of discount)</li>
+                        <li><i class="fas fa-tag"></i> <strong>Partner Offer</strong> Sign up for Pay Later and get Gift Card worth ₹100</li>
+                    </ul>
+                </div>
+                <div class="product-highlights">
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>15.6 inch Full HD (1920 x 1080) IPS Display</li>
+                        <li>Intel Core i7-1165G7 Processor (12M Cache, up to 4.70 GHz)</li>
+                        <li>16GB DDR4 RAM, 512GB PCIe NVMe SSD</li>
+                        <li>Windows 11 Home, Backlit Keyboard</li>
+                        <li>1.6 kg, Aluminum Body</li>
+                    </ul>
+                </div>
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                        <input type="text" value="1" class="qty-input">
+                        <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <button class="buy-now-btn">Buy Now</button>
+                    <button class="wishlist-btn"><i class="far fa-heart"></i> Wishlist</button>
+                </div>
+                <div class="delivery-info">
+                    <p><i class="fas fa-truck"></i> <strong>Delivery</strong>: Standard delivery by Tomorrow, 10 AM - 8 PM</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Delivery to</strong>: <span class="location">New York, 10001</span> <a href="#" class="change-location">Change</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Details Tabs -->
+        <div class="product-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="specifications">Specifications</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                <button class="tab-btn" data-tab="questions">Q&A</button>
+            </div>
+            <div class="tab-content active" id="description">
+                <h3>Product Description</h3>
+                <p>The Premium Laptop is designed for professionals who demand performance and portability. With its sleek aluminum body and powerful internals, this laptop is perfect for work, creativity, and entertainment.</p>
+                <p>Featuring a vibrant 15.6-inch Full HD IPS display with thin bezels, the laptop offers an immersive viewing experience. The Intel Core i7 processor and 16GB of RAM ensure smooth multitasking, while the 512GB SSD provides fast storage and quick boot times.</p>
+                <p>The backlit keyboard makes typing in low-light conditions easy, and the precision touchpad supports multi-touch gestures. With multiple ports including USB-C, USB-A, HDMI, and a headphone jack, you can connect all your peripherals with ease.</p>
+            </div>
+            <div class="tab-content" id="specifications">
+                <h3>Technical Specifications</h3>
+                <table>
+                    <tr>
+                        <th>Brand</th>
+                        <td>TechPro</td>
+                    </tr>
+                    <tr>
+                        <th>Model</th>
+                        <td>UltraBook Pro 15</td>
+                    </tr>
+                    <tr>
+                        <th>Screen Size</th>
+                        <td>15.6 inches</td>
+                    </tr>
+                    <tr>
+                        <th>Screen Resolution</th>
+                        <td>1920 x 1080 pixels (Full HD)</td>
+                    </tr>
+                    <tr>
+                        <th>Processor</th>
+                        <td>Intel Core i7-1165G7 (12M Cache, up to 4.70 GHz)</td>
+                    </tr>
+                    <tr>
+                        <th>RAM</th>
+                        <td>16GB DDR4</td>
+                    </tr>
+                    <tr>
+                        <th>Storage</th>
+                        <td>512GB PCIe NVMe SSD</td>
+                    </tr>
+                    <tr>
+                        <th>Operating System</th>
+                        <td>Windows 11 Home</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>1.6 kg</td>
+                    </tr>
+                    <tr>
+                        <th>Battery</th>
+                        <td>4-cell, 65Wh, up to 10 hours</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-content" id="reviews">
+                <h3>Customer Reviews</h3>
+                <div class="review-summary">
+                    <div class="overall-rating">
+                        <div class="rating-number">4.3</div>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="rating-count">124 ratings</div>
+                    </div>
+                    <div class="rating-distribution">
+                        <div class="rating-bar">
+                            <span>5★</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 70%;"></div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>4★</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 20%;"></div>
+                            </div>
+                            <span>20%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>3★</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 5%;"></div>
+                            </div>
+                            <span>5%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>2★</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 3%;"></div>
+                            </div>
+                            <span>3%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>1★</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 2%;"></div>
+                            </div>
+                            <span>2%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer-reviews">
+                    <div class="review">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">John D.</span>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">Reviewed on October 15, 2023</span>
+                        </div>
+                        <h4 class="review-title">Excellent performance and build quality</h4>
+                        <p class="review-text">This laptop exceeded my expectations. The build quality is premium with the aluminum body, and the performance is outstanding. The display is crisp and vibrant, and the keyboard is comfortable to type on. Battery life is good for my workday. Highly recommended!</p>
+                    </div>
+                    <div class="review">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Sarah M.</span>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-date">Reviewed on October 10, 2023</span>
+                        </div>
+                        <h4 class="review-title">Great laptop with minor issues</h4>
+                        <p class="review-text">Overall a great laptop for the price. The performance is excellent, and it handles all my work tasks with ease. My only complaint is that the fan can get a bit loud under heavy load, but it's not a deal-breaker. The display could be brighter for outdoor use.</p>
+                    </div>
+                </div>
+                <button class="view-all-reviews">View All Reviews</button>
+            </div>
+            <div class="tab-content" id="questions">
+                <h3>Questions & Answers</h3>
+                <div class="search-questions">
+                    <input type="text" placeholder="Have a question? Search for answers...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="common-questions">
+                    <div class="question">
+                        <h4>Does this laptop have a backlit keyboard?</h4>
+                        <p>Yes, this model comes with a backlit keyboard that has adjustable brightness levels.</p>
+                        <div class="question-meta">
+                            <span>Asked by Michael on October 5, 2023</span>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h4>Is the RAM upgradable on this model?</h4>
+                        <p>No, the RAM is soldered to the motherboard and cannot be upgraded after purchase.</p>
+                        <div class="question-meta">
+                            <span>Asked by Jessica on September 28, 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="ask-question">Ask a Question</button>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+            <h2>You may also like</h2>
+            <div class="product-grid">
+                <!-- Related product cards (similar to index.html) -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <!-- Footer content from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

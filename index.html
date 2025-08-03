@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Online Shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>ShopEasy</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="account"><i class="fas fa-user"></i> Account</a>
+                <a href="#" class="wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="category-container">
+            <a href="#" class="category-link active" data-category="electronics">Electronics</a>
+            <a href="#" class="category-link" data-category="fashion">Fashion</a>
+            <a href="#" class="category-link" data-category="home">Home & Kitchen</a>
+            <a href="#" class="category-link" data-category="grocery">Grocery</a>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <div class="banner-content">
+            <h2>Summer Sale - Up to 50% Off!</h2>
+            <p>On all electronics and home appliances</p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="category-section active" id="electronics">
+        <h2 class="section-title">Electronics</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/laptop.jpg" alt="Laptop">
+                <h3>Premium Laptop</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(124)</span>
+                </div>
+                <p class="price">$899.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/smartphone.jpg" alt="Smartphone">
+                <h3>Smartphone Pro</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(89)</span>
+                </div>
+                <p class="price">$699.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/headphones.jpg" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(256)</span>
+                </div>
+                <p class="price">$149.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/smartwatch.jpg" alt="Smartwatch">
+                <h3>Smart Watch</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(178)</span>
+                </div>
+                <p class="price">$199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <a href="products.html?category=electronics" class="view-all">View All Electronics →</a>
+    </div>
+
+    <div class="category-section" id="fashion">
+        <h2 class="section-title">Fashion</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/tshirt.jpg" alt="T-Shirt">
+                <h3>Men's T-Shirt</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(56)</span>
+                </div>
+                <p class="price">$24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/dress.jpg" alt="Dress">
+                <h3>Women's Dress</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(78)</span>
+                </div>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/jeans.jpg" alt="Jeans">
+                <h3>Men's Jeans</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(112)</span>
+                </div>
+                <p class="price">$59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/sneakers.jpg" alt="Sneakers">
+                <h3>Running Shoes</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(64)</span>
+                </div>
+                <p class="price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <a href="products.html?category=fashion" class="view-all">View All Fashion →</a>
+    </div>
+
+    <div class="category-section" id="home">
+        <h2 class="section-title">Home & Kitchen</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/blender.jpg" alt="Blender">
+                <h3>Electric Blender</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(92)</span>
+                </div>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/cookware.jpg" alt="Cookware">
+                <h3>Non-Stick Cookware Set</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(45)</span>
+                </div>
+                <p class="price">$129.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/vacuum.jpg" alt="Vacuum">
+                <h3>Robot Vacuum</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(136)</span>
+                </div>
+                <p class="price">$249.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/lamp.jpg" alt="Lamp">
+                <h3>Modern Table Lamp</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span>(38)</span>
+                </div>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <a href="products.html?category=home" class="view-all">View All Home & Kitchen →</a>
+    </div>
+
+    <div class="category-section" id="grocery">
+        <h2 class="section-title">Grocery</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/coffee.jpg.jpg" alt="Coffee">
+                <h3>Premium Coffee</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(210)</span>
+                </div>
+                <p class="price">$12.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/snacks.jpg" alt="Snacks">
+                <h3>Assorted Snacks</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(87)</span>
+                </div>
+                <p class="price">$8.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/oil.jpg" alt="Oil">
+                <h3>Olive Oil</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(124)</span>
+                </div>
+                <p class="price">$15.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/pasta.jpg" alt="Pasta">
+                <h3>Organic Pasta</h3>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(56)</span>
+                </div>
+                <p class="price">$4.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <a href="products.html?category=grocery" class="view-all">View All Grocery →</a>
+    </div>
+
+    <!-- Deals of the Day -->
+    <div class="deals-section">
+        <h2 class="section-title">Deals of the Day</h2>
+        <div class="product-grid">
+            <!-- Deal 1 -->
+            <div class="product-card deal">
+                <span class="deal-tag">30% OFF</span>
+                <img src="images/tv.jpg" alt="TV">
+                <h3>Smart TV</h3>
+                <div class="price-container">
+                    <p class="original-price">$999.99</p>
+                    <p class="deal-price">$699.99</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Deal 2 -->
+            <div class="product-card deal">
+                <span class="deal-tag">BUY 1 GET 1</span>
+                <img src="images/shampoo.jpg" alt="Shampoo">
+                <h3>Hair Shampoo</h3>
+                <div class="price-container">
+                    <p class="original-price">$12.99</p>
+                    <p class="deal-price">$12.99 (2 items)</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Deal 3 -->
+            <div class="product-card deal">
+                <span class="deal-tag">FLAT 20% OFF</span>
+                <img src="images/backpack.jpg" alt="Backpack">
+                <h3>Travel Backpack</h3>
+                <div class="price-container">
+                    <p class="original-price">$59.99</p>
+                    <p class="deal-price">$47.99</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Deal 4 -->
+            <div class="product-card deal">
+                <span class="deal-tag">50% OFF</span>
+                <img src="images/mixer.jpg" alt="Mixer">
+                <h3>Hand Mixer</h3>
+                <div class="price-container">
+                    <p class="original-price">$39.99</p>
+                    <p class="deal-price">$19.99</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ShopEasy</h3>
+                <p>Your one-stop shop for all your needs</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main St, City, Country</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@shopeasy.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 ShopEasy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

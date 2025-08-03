@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - ShopEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>ShopEasy</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="account"><i class="fas fa-user"></i> Account</a>
+                <a href="#" class="wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">2</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1>Your Shopping Cart (<span id="cart-item-count">2</span> items)</h1>
+            <a href="products.html" class="continue-shopping">Continue Shopping</a>
+        </div>
+
+        <div class="cart-content">
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="images/laptop.jpg" alt="Premium Laptop">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Premium Laptop - 15.6" FHD, 16GB RAM, 512GB SSD</h3>
+                        <p class="item-seller">Sold by: TechPro Direct</p>
+                        <div class="item-price">
+                            <span class="current-price">$899.99</span>
+                            <span class="original-price">$1,099.99</span>
+                            <span class="discount">18% off</span>
+                        </div>
+                        <div class="item-delivery">
+                            <p><i class="fas fa-truck"></i> Delivery by Tomorrow, 10 AM - 8 PM</p>
+                        </div>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="text" value="1" class="qty-input">
+                                <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                            <button class="remove-item">Remove</button>
+                            <button class="move-to-wishlist">Move to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="images/headphones.jpg" alt="Wireless Headphones">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Wireless Headphones with Noise Cancellation</h3>
+                        <p class="item-seller">Sold by: AudioDirect</p>
+                        <div class="item-price">
+                            <span class="current-price">$149.99</span>
+                            <span class="original-price">$199.99</span>
+                            <span class="discount">25% off</span>
+                        </div>
+                        <div class="item-delivery">
+                            <p><i class="fas fa-truck"></i> Delivery by Tomorrow, 10 AM - 8 PM</p>
+                        </div>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="text" value="1" class="qty-input">
+                                <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                            <button class="remove-item">Remove</button>
+                            <button class="move-to-wishlist">Move to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal (2 items)</span>
+                        <span>$1,049.98</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery Charges</span>
+                        <span class="free">FREE</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span>$84.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>$1,133.98</span>
+                    </div>
+                </div>
+                <div class="coupon-section">
+                    <input type="text" placeholder="Enter coupon code">
+                    <button class="apply-coupon">Apply</button>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+                <div class="payment-options">
+                    <p>We accept:</p>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+                <div class="secure-checkout">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure checkout</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recently Viewed -->
+        <div class="recently-viewed">
+            <h2>Recently Viewed</h2>
+            <div class="product-grid">
+                <!-- Recently viewed product cards (similar to index.html) -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <!-- Footer content from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
